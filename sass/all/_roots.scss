@@ -18,6 +18,10 @@
     /* for scroll */
     --dark-scrollBg: rgb(197, 197, 197);
     --dark-scrollBgHover: rgb(211, 211, 211);
+
+    --dark-coading-wrap-left-border: rgb(0, 129, 119);
+
+    --dark-coading-color: rgb(0, 174, 255);
 }
 
 body {
@@ -40,6 +44,10 @@ body {
     /* for scroll */
     --scrollBg: rgb(143, 143, 143);
     --scrollBgHover: rgb(113, 113, 113);
+
+    --coading-wrap-left-border: rgb(255, 0, 140);
+
+    --coading-color: rgb(0, 0, 208);
 }
 
 body.theme-dark {
@@ -61,6 +69,10 @@ body.theme-dark {
     /* for scroll */
     --scrollBg: var(--dark-scrollBg);
     --scrollBgHover: var(--dark-scrollBgHover);
+
+    --coading-wrap-left-border: var(--dark-coading-wrap-left-border);
+
+    --coading-color: var(--dark-coading-color);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -83,5 +95,10 @@ body.theme-dark {
         /* for scroll */
         --scrollBg: var(--dark-scrollBg);
         --scrollBgHover: var(--dark-scrollBgHover);
+
+        --coading-wrap-left-border: var(--dark-coading-wrap-left-border);
+
+        --coading-color: var(--dark-coading-color);
     }
 }
+

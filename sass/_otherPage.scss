@@ -38,10 +38,71 @@
 
 .course-section-main-wrap {
     width: $max-width;
-    height: 100vh;
+    padding: 193px 0;
+    height: auto;
     position: relative;
+    @include flex-layout(center);
 
     .wave1 {
         @extend .wave1;
+    }
+
+    .course-section-wrap {
+        width: $med-width;
+        background: var(--primary-bg);
+        box-shadow: $box-shadow;
+        border-radius: $border-radius;
+        border: 1px solid var(--border-color);
+        padding: 29px;
+
+        // coading hading
+        .course-head-introduction {
+            font-size: 1.3rem;
+            letter-spacing: 1.7px;
+            font-family: $font5;
+            color: var(--black);
+            text-transform: capitalize;
+            margin: 9px 0;
+            ;
+        }
+
+        .example {
+            color: var(--black);
+            margin: 7px 0;
+            text-transform: capitalize;
+            font-size: 1.3rem;
+            display: inline-block;
+            letter-spacing: 1px;
+        }
+
+        .cousr-codeing-here {
+            width: 85%;
+            background: var(--cod-bg);
+            padding: 11px 15px;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            border-right: 1px solid var(--border-color);
+            border-left: 3px solid var(--coading-wrap-left-border);
+
+            .command-head {
+                text-transform: uppercase;
+                display: inline-block;
+                color: var(--coading-color);
+                letter-spacing: 1.3px;
+
+                .command-head-inner {
+                    color: var(--black);
+                    text-transform: capitalize;
+                }
+            }
+        }
+
+        .coading-comment {
+            display: inline-block;
+            margin: 15px 0;
+            color: var(--black);
+            font-size: 1.1rem;
+            letter-spacing: 1.3px;
+        }
     }
 }
