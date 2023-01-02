@@ -1,3 +1,10 @@
+
+// for scroll sticky
+let headerMainWrap = document.querySelector('.headerMainWrap');
+window.addEventListener('scroll', () => {
+	headerMainWrap.classList.toggle('sticky', window.scrollY > 0);
+});
+
 // for slider
 var swiper = new Swiper('.swiper-container', {
 	slidesPerView: 1,

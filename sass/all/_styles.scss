@@ -11,12 +11,49 @@
 body {
     background: var(--body-bg);
     font-family: $font1;
-    overflow: hidden;
-    position: relative;
 }
 
 a,
 a:active {
     text-decoration: none;
     color: var(--black);
+}
+
+.for-hero-text-and-heading {
+    width: 35%;
+    background: var(--cod-bg);
+    padding: 9px;
+    border: 1px solid var(--border-color);
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+}
+
+.wave {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transform: rotate(180deg);
+    fill: var(--header-bg);
+}
+
+.wave1 {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    fill: rgb(255, 255, 255);
+}
+
+.animated-text-logo {
+    color: var(--black);
+    font-size: 1.9rem;
+    letter-spacing: 2.1px;
+    text-transform: capitalize;
+    font-family: $font8;
+    background: var(--gradient);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: 700%;
+    animation: logoBgAnimate 13s linear infinite;
 }
