@@ -1,0 +1,27 @@
+@use "roots";
+@use "fonts";
+
+$max-width: 100%;
+$med-width: 1170px;
+$min-width: 960px;
+
+@mixin flex-layout($align-ment) {
+    display: flex;
+    align-items: center;
+
+    @if($align-ment == center) {
+        justify-content: center;
+    }
+
+    @else if($align-ment == between) {
+        justify-content: space-between;
+    }
+
+    @else if($align-ment == evenly) {
+        justify-content: space-evenly;
+    }
+
+    @else if($align-ment == around) {
+        justify-content: space-around;
+    }
+}

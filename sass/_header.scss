@@ -1,0 +1,81 @@
+
+@use "all" as *;
+
+.header-main-wrap {
+    width: $max-width;
+    height: 100px;
+    background: var(--header-bg);
+    @include flex-layout(center);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99999999999;
+
+    .header-wrap {
+        width: $med-width;
+        @include flex-layout(between);
+
+        .logo {
+            color: var(--black);
+            font-size: 1.9rem;
+            letter-spacing: 2.1px;
+            text-transform: capitalize;
+            font-family: $font8;
+            background: var(--gradient);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-size: 700%;
+            animation: logoBgAnimate 13s linear infinite;
+        }
+
+        .primary-menu {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+
+            .primary-menu-item {
+                .primary-menu-link {
+                    font-size: 1.1rem;
+                    display: inline-block;
+                    padding: 9px 15px;
+                    margin: 0 3px;
+                    text-transform: capitalize;
+                    letter-spacing: 1px;
+                    position: relative;
+                }
+
+                .primary-menu-link::before {
+                    content: '';
+                    position: absolute;
+                    width: 0%;
+                    height: 2px;
+                    background: var(--black);
+                    left: 50%;
+                    bottom: 0;
+                    transition: .5s;
+                }
+
+                .primary-menu-link:hover::before {
+                    width: 100%;
+                    left: 0;
+                }
+            }
+        }
+
+        .theme {
+            appearance: none;
+            font-size: 1rem;
+            font-family: $font1;
+            padding: 5px;
+            text-transform: capitalize;
+            border-radius: 7px;
+            outline: none;
+            background: var(--primary-bg);
+            color: var(--black);
+            text-align: center;
+            border-color: var(--border-color);
+            cursor: pointer;
+        }
+    }
+}
+

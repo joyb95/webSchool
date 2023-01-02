@@ -1,0 +1,87 @@
+:root {
+    // for dark theme
+
+    --dark-gradient: linear-gradient(90deg, rgba(0, 255, 235, 1) 0%, rgba(255, 231, 0, 1) 28%, rgba(0, 211, 255, 1) 53%, rgba(0, 255, 46, 1) 75%, rgba(0, 255, 235, 1) 100%);
+    --dark-white: #000;
+    --dark-black: #fff;
+
+    --dark-header-bg: rgb(22, 27, 34);
+
+    --dark-body-bg: rgb(1, 4, 9);
+
+    --dark-primary-bg: rgb(13, 17, 23);
+
+    --dark-cod-bg: rgb(13, 27, 34);
+
+    --dark-border-color: rgb(33, 38, 45);
+
+    /* for scroll */
+    --dark-scrollBg: rgb(197, 197, 197);
+    --dark-scrollBgHover: rgb(211, 211, 211);
+}
+
+body {
+    // for light theme
+
+    --gradient: linear-gradient(90deg, rgba(255, 196, 0, 1) 0%, rgba(255, 0, 206, 1) 28%, rgba(255, 154, 0, 1) 53%, rgba(255, 0, 99, 1) 75%, rgba(255, 196, 0, 1) 100%);
+    --white: rgb(255, 255, 255);
+    --black: rgb(0, 0, 0);
+
+    --header-bg: rgb(255, 255, 255);
+
+    --body-bg: rgb(245, 245, 245);
+
+    --primary-bg: rgb(255, 255, 255);
+
+    --cod-bg: rgb(251, 251, 251);
+
+    --border-color: rgb(219, 219, 219);
+
+    /* for scroll */
+    --scrollBg: rgb(143, 143, 143);
+    --scrollBgHover: rgb(113, 113, 113);
+}
+
+body.theme-dark {
+    // for dark theme
+    --gradient: var(--dark-gradient);
+    --white: var(--dark-white);
+    --black: var(--dark-black);
+
+    --header-bg: var(--dark-header-bg);
+
+    --body-bg: var(--dark-body-bg);
+
+    --primary-bg: var(--dark-primary-bg);
+
+    --cod-bg: var(--dark-cod-bg);
+
+    --border-color: var(--dark-border-color);
+
+    /* for scroll */
+    --scrollBg: var(--dark-scrollBg);
+    --scrollBgHover: var(--dark-scrollBgHover);
+}
+
+@media (prefers-color-scheme: dark) {
+    body.theme-auto {
+        /* for dark theme */
+        --gradient: var(--dark-gradient);
+        --white: var(--dark-white);
+        --black: var(--dark-black);
+
+        --header-bg: var(--dark-header-bg);
+
+        --body-bg: var(--dark-body-bg);
+
+        --primary-bg: var(--dark-primary-bg);
+
+        --cod-bg: var(--dark-cod-bg);
+
+        --border-color: var(--dark-border-color);
+
+        /* for scroll */
+        --scrollBg: var(--dark-scrollBg);
+        --scrollBgHover: var(--dark-scrollBgHover);
+    }
+}
