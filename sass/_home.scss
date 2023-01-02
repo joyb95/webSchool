@@ -71,14 +71,14 @@
                         border-radius: 9px;
                         border: 1px solid var(--border-color);
                         opacity: 0;
-                        transition: .3s;
+                        transition: 1.5s;
                     }
 
                     a {
                         .slide-text {
                             @extend .slide-text;
                             letter-spacing: 1px;
-                            transition: .3s;
+                            transition: .9s;
                         }
 
                         .slide-text:hover {
