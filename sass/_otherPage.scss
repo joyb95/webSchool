@@ -79,15 +79,6 @@
             left: 0;
         }
 
-        .example {
-            color: var(--black);
-            margin: 7px 0;
-            text-transform: capitalize;
-            font-size: 1.3rem;
-            display: inline-block;
-            letter-spacing: 1px;
-        }
-
         .cousr-codeing-here {
             width: 100%;
             background: var(--cod-bg);
@@ -96,27 +87,41 @@
             border-bottom: 1px solid var(--border-color);
             border-right: 1px solid var(--border-color);
             border-left: 3px solid var(--coading-wrap-left-border);
-
-            .blue-color {
-                text-transform: uppercase;
-                display: inline-block;
-                color: var(--blue-color);
-                letter-spacing: 1.3px;
-
-                .black-color {
-                    color: var(--black);
-                    text-transform: capitalize;
-                }
-            }
-        }
-
-        .coading-comment {
-            display: inline-block;
-            margin: 15px 0;
-            color: var(--black);
-            font-size: 1.1rem;
-            letter-spacing: 1.3px;
         }
     }
 }
 
+// for color text and coading text
+.example {
+    color: var(--black);
+    margin: 7px 0;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+.blue-color {
+    text-transform: uppercase;
+    display: inline-block;
+    color: var(--blue-color);
+    letter-spacing: 1.3px;
+}
+
+.black-color {
+    color: var(--black);
+    text-transform: capitalize;
+}
+
+.coading-comment {
+    display: inline-block;
+    margin: 15px 0;
+    color: var(--black);
+    font-size: 1.1rem;
+    letter-spacing: 1.3px;
+}
+
+.space-left {
+    margin-left: 19px;
+    display: inline-block;
+}

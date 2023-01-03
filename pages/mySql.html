@@ -62,57 +62,133 @@
 
             <span class="example">example :</span>
             <div class="cousr-codeing-here">
-                <span class="blue-color">
-                    show databases;
-                </span>
+                <span class="blue-color">show databases;</span>
             </div>
-            <span class="coading-comment">
-                সব ডাটাবেজগুলো দেখতে।
-            </span>
+            <span class="coading-comment">সব ডাটাবেজগুলো দেখতে।</span>
 
             <br>
             <br>
 
             <span class="example">example :</span>
             <div class="cousr-codeing-here">
-                <span class="blue-color">
-                    create database
-                    <span class="black-color">name</span>;
+                <span class="blue-color">create database<span class="black-color">name</span>;
                 </span>
             </div>
-            <span class="coading-comment">
-                সব ডাটাবেজগুলো দেখতে।
-            </span>
+            <span class="coading-comment">সব ডাটাবেজগুলো দেখতে।</span>
 
             <br>
             <br>
 
             <span class="example">example :</span>
             <div class="cousr-codeing-here">
-                <span class="blue-color">
-                    drop database
-                    <span class="black-color">name</span>;
+                <span class="blue-color">drop database<span class="black-color">name</span>;
                 </span>
             </div>
-            <span class="coading-comment">
-                ডাটাবেজ মুছে ফেলতে।
-            </span>
+            <span class="coading-comment">ডাটাবেজ মুছে ফেলতে।</span>
 
         </div>
 
         <!-- creating table -->
         <div class="course-section-wrap margin-top">
-            <div class="course-head-introduction">database basic :</div>
+            <div class="course-head-introduction">creating table :</div>
 
             <span class="example">example :</span>
             <div class="cousr-codeing-here">
-                <span class="blue-color">
-                    show databases;
-                </span>
+                <span class="blue-color">create table</span>
+                <span class="black-color">name</span>
+                <br>
+                <span class="blue-color">(</span>
+                <br>
+                <span class="black-color space-left">Roll int(5),</span>
+                <br>
+                <span class="black-color space-left">Name varChar(21),</span>
+                <br>
+                <span class="black-color space-left">Gender varChar(5),</span>
+                <br>
+                <span class="black-color space-left">GPA double(3,2),</span>
+                <br>
+                <span class="black-color space-left">PRIMARY KEY(Roll)</span>
+                <br>
+                <span class="blue-color">);</span>
             </div>
-            <span class="coading-comment">
-                সব ডাটাবেজগুলো দেখতে।
-            </span>
+            <span class="coading-comment">টেবিল তৈরী করতে।</span>
+
+            <br>
+            <br>
+
+            <!-- insert into -->
+            <div class="course-head-introduction">inserting table value 1 :</div>
+            <span class="example">example :</span>
+            <div class="cousr-codeing-here">
+                <span class="blue-color">insert into <span class="black-color">table_name (column1, column2, column3,
+                        ...)</span></span>
+                <br>
+                <span class="blue-color">values <br> <span class="black-color">(value1, "value2", "value3",
+                        ...)</span>;</span>
+            </div>
+            <span class="coading-comment">টেবিলে উপাত্ত প্রদান করতে।</span>
+
+            <br>
+            <br>
+
+            <!-- insert into -->
+            <div class="course-head-introduction">inserting table value 2 :</div>
+            <span class="example">example :</span>
+            <div class="cousr-codeing-here">
+                <span class="blue-color">insert into <span class="black-color">table_name (column1, column2, column3,
+                        ...)</span></span>
+                <br>
+                <span class="blue-color">values <br> <span class="black-color">(value1, "value2", "value3",
+                        ...)</span>,</span>
+                <br>
+                <span class="blue-color"> <span class="black-color">(value1, "value2", "value3", ...)</span>,</span>
+                <br>
+                <span class="blue-color"> <span class="black-color">(value1, "value2", "value3",
+                        ...)</span>;</span>
+            </div>
+            <span class="coading-comment">টেবিলে একাধিক উপাত্ত প্রদান করতে।</span>
+
+            <br>
+            <br>
+
+            <!-- insert into -->
+            <div class="course-head-introduction">inserting table value 3 :</div>
+            <span class="example">example :</span>
+            <div class="cousr-codeing-here">
+                <span class="blue-color">insert into <span class="black-color">table_name</span></span>
+                <br>
+                <span class="blue-color">values <br> <span class="black-color">(value1, "value2", "value3",
+                        ...)</span>,</span>
+                <br>
+                <span class="blue-color"> <span class="black-color">(value1, "value2", "value3",
+                        ...)</span>,</span>
+                <br>
+                <span class="blue-color"> <span class="black-color">(value1, "value2", "value3",
+                        ...)</span>;</span>
+            </div>
+            <span class="coading-comment">টেবিলে একাধিক উপাত্ত প্রদান করতে।</span>
+
+        </div>
+
+        <!-- table basic -->
+        <div class="course-section-wrap margin-top">
+            <!-- insert into -->
+            <div class="course-head-introduction">table basic :</div>
+            <span class="example">example :</span>
+            <div class="cousr-codeing-here">
+                <span class="blue-color">rename table <span class="black-color">past_table <span class="blue-color">to
+                        </span> <span class="black-color">present_table</span></span>;</span>
+            </div>
+            <span class="coading-comment">টেবিলের নাম পরিবর্তন করতে।</span>
+
+            <br>
+            <br>
+
+            <span class="example">example :</span>
+            <div class="cousr-codeing-here">
+                <span class="blue-color">drop table <span class="black-color">table_name</span>;</span>
+            </div>
+            <span class="coading-comment">টেবিল ডিলিট করতে।</span>
         </div>
 
         <div class="wave" style="height: 150px; overflow: hidden;">
