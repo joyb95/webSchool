@@ -120,11 +120,15 @@
             <div class="course-head-introduction">inserting table value 1 :</div>
             <span class="example">example :</span>
             <div class="cousr-codeing-here">
-                <span class="blue-color">insert into <span class="black-color">table_name (column1, column2, column3,
-                        ...)</span></span>
+                <span class="blue-color">insert into
+                    <span class="black-color">table_name (column1, column2, column3,
+                        ...)</span>
+                </span>
                 <br>
-                <span class="blue-color">values <br> <span class="black-color">(value1, "value2", "value3",
-                        ...)</span>;</span>
+                <span class="blue-color">values <br>
+                    <span class="black-color">(value1, "value2", "value3",
+                        ...)</span>;
+                </span>
             </div>
             <span class="coading-comment">টেবিলে উপাত্ত প্রদান করতে।</span>
 
@@ -135,16 +139,24 @@
             <div class="course-head-introduction">inserting table value 2 :</div>
             <span class="example">example :</span>
             <div class="cousr-codeing-here">
-                <span class="blue-color">insert into <span class="black-color">table_name (column1, column2, column3,
-                        ...)</span></span>
+                <span class="blue-color">insert into
+                    <span class="black-color">table_name (column1, column2, column3,
+                        ...)</span>
+                </span>
                 <br>
-                <span class="blue-color">values <br> <span class="black-color">(value1, "value2", "value3",
-                        ...)</span>,</span>
+                <span class="blue-color">values <br>
+                    <span class="black-color">(value1, "value2", "value3",
+                        ...)</span>,
+                </span>
                 <br>
-                <span class="blue-color"> <span class="black-color">(value1, "value2", "value3", ...)</span>,</span>
+                <span class="blue-color">
+                    <span class="black-color">(value1, "value2", "value3", ...)</span>,
+                </span>
                 <br>
-                <span class="blue-color"> <span class="black-color">(value1, "value2", "value3",
-                        ...)</span>;</span>
+                <span class="blue-color">
+                    <span class="black-color">(value1, "value2", "value3",
+                        ...)</span>;
+                </span>
             </div>
             <span class="coading-comment">টেবিলে একাধিক উপাত্ত প্রদান করতে।</span>
 
@@ -155,10 +167,15 @@
             <div class="course-head-introduction">inserting table value 3 :</div>
             <span class="example">example :</span>
             <div class="cousr-codeing-here">
-                <span class="blue-color">insert into <span class="black-color">table_name</span></span>
+                <span class="blue-color">insert into
+                    <span class="black-color">table_name</span>
+                </span>
                 <br>
-                <span class="blue-color">values <br> <span class="black-color">(value1, "value2", "value3",
-                        ...)</span>,</span>
+                <span class="blue-color">values <br>
+                    <span class="black-color">(value1, "value2", "value3",
+                        ...)
+                    </span>,
+                </span>
                 <br>
                 <span class="blue-color"> <span class="black-color">(value1, "value2", "value3",
                         ...)</span>,</span>
@@ -176,8 +193,12 @@
             <div class="course-head-introduction">table basic :</div>
             <span class="example">example :</span>
             <div class="cousr-codeing-here">
-                <span class="blue-color">rename table <span class="black-color">past_table <span class="blue-color">to
-                        </span> <span class="black-color">present_table</span></span>;</span>
+                <span class="blue-color">rename table
+                    <span class="black-color">past_table
+                        <span class="blue-color">to</span>
+                        <span class="black-color">present_table</span>
+                    </span>;
+                </span>
             </div>
             <span class="coading-comment">টেবিলের নাম পরিবর্তন করতে।</span>
 
@@ -186,9 +207,107 @@
 
             <span class="example">example :</span>
             <div class="cousr-codeing-here">
-                <span class="blue-color">drop table <span class="black-color">table_name</span>;</span>
+                <span class="blue-color">drop table
+                    <span class="black-color">table_name</span>;
+                </span>
             </div>
             <span class="coading-comment">টেবিল ডিলিট করতে।</span>
+
+        </div>
+
+        <!-- select -->
+        <div class="course-section-wrap margin-top">
+            <!-- select -->
+            <div class="course-head-introduction">select in table :</div>
+            <span class="example">example :</span>
+            <div class="cousr-codeing-here">
+                <span class="blue-color">select
+                    <span class="black-color">roll, name,age</span>
+                </span>
+                <br>
+                <span class="blue-color">from
+                    <span class="black-color">table_name</span>;
+                </span>
+            </div>
+            <span class="coading-comment"> table_name নামের টেবিল থেকে, Roll, Name, Age "column" দেখতে।</span>
+
+            <br>
+            <br>
+
+            <span class="example">example :</span>
+            <div class="cousr-codeing-here">
+                <span class="blue-color">select
+                    <span class="black-color">*</span>
+                </span>
+                <br>
+                <span class="blue-color">from
+                    <span class="black-color">table_name</span>;
+                </span>
+            </div>
+            <span class="coading-comment"> table_name নামের টেবিল থেকে, সবগুলো "column" দেখতে।</span>
+
+        </div>
+
+        <div class="course-section-wrap margin-top">
+
+            <!-- limit in select -->
+            <div class="course-head-introduction">select, limit in table :</div>
+            <span class="example">example :</span>
+            <div class="cousr-codeing-here">
+                <span class="blue-color">select
+                    <span class="black-color">*</span>
+                </span>
+                <br>
+                <span class="blue-color">from
+                    <span class="black-color">table_name</span>
+                </span>
+                <br>
+                <span class="blue-color">limit
+                    <span class="black-color">5</span>;
+                </span>
+            </div>
+            <span class="coading-comment"> প্রথম পাঁচটি row দেখতে।</span>
+
+            <br>
+            <br>
+            
+            <!-- limit 2 -->
+            <span class="example">example :</span>
+            <div class="cousr-codeing-here">
+                <span class="blue-color">select
+                    <span class="black-color">*</span>
+                </span>
+                <br>
+                <span class="blue-color">from
+                    <span class="black-color">table_name</span>
+                </span>
+                <br>
+                <span class="blue-color">limit
+                    <span class="black-color">2,5</span>;
+                </span>
+            </div>
+            <span class="coading-comment"> প্রথম দুটি row বাদ দিয়ে পরের পাঁচটি row দেখতে।</span>
+
+        </div>
+
+        <!-- distinct in select -->
+        <div class="course-section-wrap margin-top">
+
+            <!-- distinct -->
+            <div class="course-head-introduction">select, distinct in table :</div>
+            <span class="example">example :</span>
+            <div class="cousr-codeing-here">
+                <span class="blue-color">select
+                    <span class="blue-color">distinct</span>
+                    <span class="black-color">city</span>
+                </span>
+                <br>
+                <span class="blue-color">from
+                    <span class="black-color">table_name</span>;
+                </span>
+            </div>
+            <span class="coading-comment">একই নামের অনেক city থাকলে তার মধ্যে থেকে একটি city দেখতে।</span>
+
         </div>
 
         <div class="wave" style="height: 150px; overflow: hidden;">
