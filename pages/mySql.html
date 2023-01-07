@@ -187,6 +187,68 @@
 
         </div>
 
+        <!-- creating table 1 -->
+        <div class="course-section-wrap margin-top">
+
+            <div class="course-head-introduction">creating table 1, with constraints :</div>
+
+            <span class="example">example :</span>
+            <div class="cousr-codeing-here">
+                <span class="blue-color">create table</span>
+                <span class="black-color">name</span>
+                <br>
+                <span class="blue-color">(</span>
+                <br>
+                <span class="black-color space-left">Id int NOT NULL AUTO_INCREMENT,</span>
+                <br>
+                <span class="black-color space-left">Name varChar(21) NOT NULL,</span>
+                <br>
+                <span class="black-color space-left">Gender varChar(5),</span>
+                <br>
+                <span class="black-color space-left">GPA double(3,2),</span>
+                <br>
+                <span class="black-color space-left">PRIMARY KEY(Roll)</span>
+                <br>
+                <span class="blue-color">);</span>
+            </div>
+            <span class="coading-comment">NOT NULL এর কারণে উপাত্ত দেওয়ার সময় খালি রাখা যাবে না, আবার AUTO_INCREMENT এর কারণে খালি রাখলেও নিজ থেকে নিয়ে নিবে প্রথম উপাত্ত অনুযায়ী।</span>
+
+            <br>
+            <br>
+
+            <!-- insert into -->
+            <div class="course-head-introduction">inserting table value 4 for Constraints :</div>
+            <span class="example">example :</span>
+            <div class="cousr-codeing-here">
+                <span class="blue-color">insert into
+                    <span class="black-color">table_name (Id, Name, Gender, GPA)</span>
+                </span>
+                <br>
+                <span class="blue-color">values <br>
+                    <span class="black-color">(101, "Name", "Male",4.33)</span>,
+                </span>
+            </div>
+            <span class="coading-comment">এই টেবিলে উপাত্ত দিতে, প্রথমে আইডি  দেওয়ার কারণে পরেরবার উপাত্ত দিতে আইডি না দিলেও হবে, কারণ আইডিতে AUTO_INCREMENT ব্যবহার করা হয়েছে, তাই নিজে থেকে বাড়িয়ে নিবে।</span>
+
+            <br>
+            <br>
+
+            <!-- insert into -->
+            <div class="course-head-introduction">inserting table value 5 for Constraints :</div>
+            <span class="example">example :</span>
+            <div class="cousr-codeing-here">
+                <span class="blue-color">insert into
+                    <span class="black-color">table_name (Name, Gender, GPA)</span>
+                </span>
+                <br>
+                <span class="blue-color">values <br>
+                    <span class="black-color">("Name", "Male",4.33)</span>,
+                </span>
+            </div>
+            <span class="coading-comment">AUTO_INCREMENT ব্যবহারের কারণে, আগে আইডি দেওয়াতে এবার না দিলেও নিজে থেকে বাড়িয়ে নিবে। <br> তবে NOT NULL তবে ব্যবহার করলে খালি রাখা যাবে না।</span>
+
+        </div>
+
         <!-- table basic -->
         <div class="course-section-wrap margin-top">
             <!-- insert into -->
@@ -222,7 +284,7 @@
             <span class="example">example :</span>
             <div class="cousr-codeing-here">
                 <span class="blue-color">select
-                    <span class="black-color">roll, name,age</span>
+                    <span class="black-color">roll, name, age</span>
                 </span>
                 <br>
                 <span class="blue-color">from
@@ -335,7 +397,26 @@
             <br>
 
             <!-- shorting -->
-            <div class="course-head-introduction">shorting in table :</div>
+            <span class="example">example :</span>
+            <div class="cousr-codeing-here">
+                <span class="blue-color">select
+                    <span class="black-color">name, age, city</span>
+                </span>
+                <br>
+                <span class="blue-color">from
+                    <span class="black-color">table_name</span>
+                    <br>
+                    <span class="blue-color">order by
+                        <span class="black-color">name</span>;
+                    </span>
+                </span>
+            </div>
+            <span class="coading-comment">name 'column' কে short করবে ছোট থেকে বড় হিসেবে।</span>
+
+            <br>
+            <br>
+
+            <!-- shorting -->
             <span class="example">example :</span>
             <div class="cousr-codeing-here">
                 <span class="blue-color">select
@@ -352,6 +433,174 @@
                 </span>
             </div>
             <span class="coading-comment">name 'column' কে short করবে বড় থেকে ছোট হিসেবে।</span>
+
+        </div>
+
+        <div class="course-section-wrap margin-top">
+
+            <!-- where clause -->
+            <div class="course-head-introduction">where clause :</div>
+            <!-- where clause -->
+            <span class="example">example :</span>
+            <div class="cousr-codeing-here">
+                <span class="blue-color">select
+                    <span class="black-color">*</span>
+                </span>
+                <br>
+                <span class="blue-color">from
+                    <span class="black-color">table_name</span>
+                    <br>
+                    <span class="blue-color">where
+                        <span class="black-color">gender="female"</span>;
+                    </span>
+                </span>
+            </div>
+            <span class="coading-comment">যাদের gender female শুধু তাদের উপাত্ত।</span>
+
+            <br>
+            <br>
+            
+            <span class="example">example :</span>
+            <div class="cousr-codeing-here">
+                <span class="blue-color">select
+                    <span class="black-color">*</span>
+                </span>
+                <br>
+                <span class="blue-color">from
+                    <span class="black-color">table_name</span>
+                    <br>
+                    <span class="blue-color">where
+                        <span class="black-color">age=18</span>;
+                    </span>
+                </span>
+            </div>
+            <span class="coading-comment">যাদের age 18 শুধু তাদের উপাত্ত দেখতে।</span>
+
+            <br>
+            <br>
+
+            <!-- where clause 1 -->
+            <span class="example">example :</span>
+            <div class="cousr-codeing-here">
+                    <span class="blue-color">where
+                        <span class="black-color">age>18</span>;
+                    </span>
+                </span>
+            </div>
+            <span class="coading-comment">যাদের age 18 এর বেশি শুধু তাদের উপাত্ত দেখতে।</span>
+
+            <br>
+            <br>
+
+            <!-- where clause 1 -->
+            <span class="example">example :</span>
+            <div class="cousr-codeing-here">
+                    <span class="blue-color">where
+                        <span class="black-color">age>=18</span>;
+                    </span>
+                </span>
+            </div>
+            <span class="coading-comment">যাদের age 18 এর বেশি, বা সমান শুধু তাদের উপাত্ত দেখতে।</span>
+
+            <br>
+            <br>
+
+            <!-- where clause 1 -->
+            <span class="example">example :</span>
+            <div class="cousr-codeing-here">
+                    <span class="blue-color">where
+                        <span class="black-color">Roll!=101</span>;
+                    </span>
+                </span>
+            </div>
+            <span class="coading-comment">roll 101 বাদ দিয়ে অন্যান্য সকলের উপাত্ত দেখতে।</span>
+
+        </div>
+
+        <!-- between -->
+        <div class="course-section-wrap margin-top">
+
+            <!-- between -->
+            <div class="course-head-introduction">between :</div>
+
+            <span class="example">example :</span>
+            <div class="cousr-codeing-here">
+                <span class="blue-color">select
+                    <span class="black-color">*</span>
+                </span>
+                <br>
+                <span class="blue-color">from
+                    <span class="black-color">table_name</span>
+                    <br>
+                    <span class="blue-color">where
+                        <span class="black-color">roll</span>
+                        <span class="blue-color">between</span>
+                        <span class="black-color">101</span>
+                        <span class="blue-color">and</span>
+                        <span class="black-color">105</span>;
+                    </span>
+                </span>
+            </div>
+            <span class="coading-comment">যাদের roll 101 থেকে 105 এর মধ্যে শুধু তাদের উপাত্ত দেখতে।</span>
+
+        </div>
+
+        <!-- arithmetic operator -->
+        <div class="course-section-wrap margin-top">
+
+            <!-- arithmetic operator -->
+            <div class="course-head-introduction">arithmetic operator :</div>
+            <span class="example">example :</span>
+            <div class="cousr-codeing-here">
+                <span class="blue-color">select
+                    <span class="black-color">5+5</span>;
+                </span>
+            </div>
+            <span class="coading-comment">যোগফল বের করতে।</span>
+
+            <br>
+            <br>
+
+            <span class="example">example :</span>
+            <div class="cousr-codeing-here">
+                <span class="blue-color">select
+                    <span class="black-color">5-5</span>;
+                </span>
+            </div>
+            <span class="coading-comment">বিয়োগফল বের করতে।</span>
+
+            <br>
+            <br>
+
+            <span class="example">example :</span>
+            <div class="cousr-codeing-here">
+                <span class="blue-color">select
+                    <span class="black-color">5*5</span>;
+                </span>
+            </div>
+            <span class="coading-comment">গূণফল করতে।</span>
+
+            <br>
+            <br>
+
+            <span class="example">example :</span>
+            <div class="cousr-codeing-here">
+                <span class="blue-color">select
+                    <span class="black-color">5/5</span>;
+                </span>
+            </div>
+            <span class="coading-comment">ভাগফল বের করতে।</span>
+
+            <br>
+            <br>
+
+            <span class="example">example :</span>
+            <div class="cousr-codeing-here">
+                <span class="blue-color">select
+                    <span class="black-color">5%5</span>;
+                </span>
+            </div>
+            <span class="coading-comment">ভাগশেষ বের করতে।</span>
 
         </div>
 
