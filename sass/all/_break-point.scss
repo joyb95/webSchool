@@ -2,6 +2,7 @@
 
 @media only screen and (max-width: 1200px) {
     .header-wrap,
+    .home-section-wrap,
     .course-section-wrap {
         width: 960px !important;
     }
@@ -9,7 +10,29 @@
 
 @media only screen and (max-width: 1000px) {
     .header-wrap,
+    .home-section-wrap,
     .course-section-wrap {
         width: 95% !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header-wrap,
+    .home-section-wrap,
+    .course-section-wrap,
+    .home-right-content,
+    .home-left-content {
+        width: 95% !important;
+    }
+
+    .home-section-main-wrap {
+        height: auto !important;
+        padding: 125px 0;
+    }
+
+    .home-section-wrap {
+        flex-direction: column;
+        justify-content: center !important;
+        gap: 21px;
     }
 }
