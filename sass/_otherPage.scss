@@ -126,3 +126,8 @@
     margin-left: 19px;
     display: inline-block;
 }
+
+.blue-color-git {
+    @extend .blue-color;
+    text-transform: lowercase;
+}
